@@ -13,7 +13,7 @@ write about why I'm doing this work, and why developers should care.
 [Web Components] are a series of new W3C standards that allows Javascript to
 define custom HTML tags. These custom tags, known as [custom elements], differ
 from the tags that web frameworks provide because no runtime is required to use
-them - the browser is aware of all custom elements and knows how to use them/
+them - the browser is aware of all custom elements and knows how to use them.
 
 It's important to note here that using web standards and "vanilla" Javascript
 has no inherit technical value, it's just really exciting to be a part of
