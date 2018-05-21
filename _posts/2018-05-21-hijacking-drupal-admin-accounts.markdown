@@ -49,7 +49,12 @@ Let’s try it out! We’re going to send a PATCH request for node 1, changing t
 nid and title fields in hopes of modifying another entity's data:
 
 ```bash
-$ curl -u admin:password -X PATCH http://localhost/node/1?_format=json -H 'Content-Type: application/json' -d '{"nid":[{"value": 2}],"type":"article","title":[{"value": "Hello world"}]}'
+$ curl -u admin:password -X PATCH http://localhost/node/1?_format=json -H 'Content-Type: application/json'
+-d '{
+      "nid":   [{"value": 2}],
+      "type":  "article",
+      "title": [{"value": "Hello world"}]
+    }'
 {"message":"Unprocessable entity: validation failed.\n: The content has either been modified by another user, or you have already submitted modifications. As a result, your changes cannot be saved.\n"}
 ```
 
@@ -60,7 +65,13 @@ from node 1 would be used, and wouldn't be very unique at all.
 Let’s try changing both:
 
 ```bash
-$ curl -u admin:password -X PATCH http://localhost/node/1?_format=json -H 'Content-Type: application/json' -d '{"nid":[{"value": 2}],"uuid":[{"value": "6786fd3c-cbc9-49a0-8b07-47ed78ed052e"}],"type":"article","title":[{"value": "Hello world"}]}'
+$ curl -u admin:password -X PATCH http://localhost/node/1?_format=json -H 'Content-Type: application/json'
+-d '{
+      "nid":   [{"value": 2}],
+      "type":  "article",
+      "uuid":  [{"value": "6786fd3c-cbc9-49a0-8b07-47ed78ed052e"}],
+      "title": [{"value": "Hello world"}]
+    }'
 {}
 ```
 
@@ -135,7 +146,7 @@ $ curl -u admin:password -X PATCH http://localhost/user/2?_format=json -H 'Conte
       "uuid": [{"value": "2e9403a4-d8af-4096-a116-624710140be0"}],
       "name": [{"value": "yougothacked"}],
       "mail": [{"value": "yougot@hacked.com"}],
-      "pass": [{"existing": "password"}],
+      "pass": [{"existing": "password"}]
     }'
 ```
 
