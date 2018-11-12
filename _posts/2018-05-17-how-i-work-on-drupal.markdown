@@ -2,7 +2,7 @@
 layout: post
 title:  "How I work on Drupal"
 date:   2018-05-17 08:00:00 -0500
-categories: drupal
+category: drupal
 ---
 I recently celebrated my [five-year anniversary] on Drupal.org, and wanted to
 write about how I work on issues day-to-day and my general contribution "vibe".

@@ -2,7 +2,7 @@
 layout: post
 title:  "Introducing Twig Components"
 date:   2018-04-09 08:00:00 -0500
-categories: drupal twig
+category: drupal
 ---
 Last week I published the [Twig Components Drupal module] - the latest in a
 series of projects aiming to combine Twig, Web Components, and PHP. I wanted to

@@ -2,7 +2,7 @@
 layout: post
 title:  "Hijacking Drupal admin accounts using REST"
 date:   2018-05-21 08:00:00 -0500
-categories: drupal security
+category: drupal
 ---
 _Note: This exploit was fixed over a year ago as a part of
 [SA-CORE-2017-002/CVE-2017-6919], so unless your Drupal 8 site is really,

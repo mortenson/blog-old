@@ -2,7 +2,7 @@
 layout: post
 title:  "Chained Drupal CSRF to disable all blocks"
 date:   2017-06-09 09:14:30 -0800
-categories: drupal security
+category: drupal
 ---
 _Note: The exploit discussed in this post was never included in a stable core
 release, so don't freak out! The Drupal security team quickly fixed this while
