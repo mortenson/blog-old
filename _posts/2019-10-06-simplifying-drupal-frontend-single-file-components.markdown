@@ -40,7 +40,7 @@ takes the name of the user, and some CSS to uniquely style it.
 Here’s `say_hello.sfc`:
 
 ```html
-<style>
+{% raw %}<style>
   .say-hello {
     font-size: 20px;
   }
@@ -48,7 +48,7 @@ Here’s `say_hello.sfc`:
 
 <template>
   <p class="say-hello">Hello {{ name }}!</p>
-</template>
+</template>{% endraw %}
 ```
 
 After a cache rebuild, you can now use this component anywhere by including it
@@ -147,7 +147,7 @@ you can also define SingleFileComponent plugins as PHP classes.
 Here’s the same `say_hello` component as a class:
 
 ```php
-<?php
+{% raw %}<?php
 
 namespace Drupal\example\Plugin\SingleFileComponent;
 
@@ -191,7 +191,7 @@ CSS;
     }
   }
 
-}
+}{% endraw %}
 ```
 
 Class components that extend ComponentBase define their CSS/JS/Twig in
